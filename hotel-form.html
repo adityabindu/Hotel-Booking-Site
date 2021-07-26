@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book : Hotel Midtown Majsetic</title>
+    <link rel="stylesheet" href="hotel-main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset*/
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            min-height: 100vh;
+            width: 100%;
+            background: url(hotel-2563.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .left {
+            position: absolute;
+            left: 5px;
+            top: 0px;
+            display: inline-block;
+            border: 2px transparent
+        }
+
+        .left img {
+            width: 170px;
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .nav-links {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            display: inline-block;
+            border: 2px solid green;
+
+        }
+
+        .navbar {
+            display: inline-block;
+            font-family: 'Otomanopee One', sans-serif;
+
+        }
+
+        .navbar li {
+            color: white;
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px;
+
+        }
+
+        .nav-links ul li::after {
+            content: '';
+            width: 0px;
+            height: 2px;
+            background: red;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+
+        .nav-links ul li:hover::after {
+            width: 100%;
+        }
+
+        .text-box {
+            background-color: rgba(119, 178, 255, 0.75);
+            font-family: 'Hammersmith One', sans-serif;
+            border: rgb(247, 4, 1);
+            border-radius: 20px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+            position: fixed;
+            top: 50%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 50px;
+
+        }
+
+        .text-box {
+            font-size: 35px;
+        }
+
+        .heading {
+            margin-top: 50px;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            border: 3px solid rgba(144, 13, 156, 0.5);
+            padding: 12px 34px;
+            font-size: 23px;
+            font-weight: bold;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+            font-family: 'Acme', sans-serif;
+
+        }
+
+        .hero-btn:hover {
+            border: 1px solid orange;
+            background: orange;
+            transition: 1s;
+        }
+
+        .input {
+            width: 300px;
+            height: 25px;
+            border-width: 10px;
+            border: 2px solid rgba(0, 38, 255, 0.5);
+            border-radius: 40px;
+            margin-bottom: 10px;
+            padding-left: 100px;
+            font-size: 20px;
+            text-align: center;
+            font-weight: lighter;
+            font-family: cursive;
+            background: transparent;
+            float: left;
+        }
+
+        label {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 25px;
+            font-weight: bold;
+            float: left;
+            clear: left;
+            width: 250px;
+            /* padding-top: 5px; */
+        }
+
+        select:invalid {
+            color: gray;
+        }
+
+        .hotel-name {
+            font-size: 35px;
+            font-weight: bold;
+            position: absolute;
+            right: 5%;
+            top: 0px;
+            display: inline-block;
+            border: transparent;
+            font-family: 'Otomanopee One', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+            <img src="logo.png" transperant alt="Midtown-Majestic">
+        </div>
+    </header>
+    <h2 class="hotel-name">Hotel Midtown Majestic</h2>
+    <form action="" class="text-box">
+        <div>
+            <label for="name">NAME </label>
+            <input type="text" name="myname" id="name" class="input" placeholder="Your Name Here.." required>
+        </div>
+
+        <div>
+            <label for="contactno">CONTACT NO </label>
+            <input type="text" name="mycontact" id="contactno" class="input" placeholder="Phone Number.." required>
+        </div>
+
+        <div>
+            <label for="photoid">SELECT PHOTO ID</label>
+            <select name="myphotoid" id="photoid" class="input" placeholder="Photo ID Type.." required>
+                <option value="" disabled selected hidden class="input">Choose Photo ID..</option>
+                <option value="AADHAR CARD" class="input">AADHAR CARD</option>
+                <option value="DRIVING LICENSE" class="input">DRIVING LICENSE</option>
+                <option value="PAN CARD" class="input">PAN CARD</option>
+                <option value="VOTER ID" class="input">VOTER ID</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="photoidfile">UPLOAD PHOTO ID </label>
+            <input type="file" name="mypgotoidfile" id="photoidfile" class="input" required>
+        </div>
+
+        <div>
+            <label for="checkin">CHECK-IN DATE </label>
+            <input type="date" name="mycheckin" id="checkin" class="input" required>
+        </div>
+
+        <div>
+            <label for="checkout">CHECK-OUT DATE </label>
+            <input type="date" name="mycheckout" id="checkout" class="input" required>
+        </div>
+
+        <div>
+            <label for="roomtype">SELECT ROOM TYPE </label>
+            <select name="myroomtype" id="roomtype" class="input" required>
+                <option value="" disabled selected hidden>Select Room..</option>
+                <option value="DELUXE">DELUXE</option>
+                <option value="SUPER-DELUXE">SUPER DELUXE</option>
+                <option value="KINGS-SUITE">KINGS SUITE</option>
+                <option value="SUPREME-SUITE">SUPREME SUITE</option>
+            </select>
+        </div><br><br>
+
+        <div>
+            <label for="sub-button"></label>
+            <button type="submit" id="sub-button" class="hero-btn">SUBMIT</button>
+
+            <label for="reset-button"></label>
+            <button type="reset" id="reset-button" class="hero-btn">RESET</button>
+        </div>
+    </form><br>
+</body>
+
+</html>
