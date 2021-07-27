@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms : Midtown Majestic</title>
+    <link rel="icon" href="./LOGO.png" type="image/x-icon">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+<style>
+    /* CSS Reset*/
+    body {
+        background-color: burlywood;
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./roombg.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+
+    }
+
+    .left {
+        position: absolute;
+        left: 5px;
+        top: 0px;
+        display: inline-block;
+        border: 2px transparent;
+        width: 10px;
+        text-align: center;
+    }
+
+    .header {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 3px;
+    }
+
+    h1 {
+        color: blanchedalmond;
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    h2 {
+
+        color: black;
+        font-size: 30px;
+        font-weight: 300;
+        font-family: 'Rye', cursive;
+        line-height: 22px;
+        padding: 10px;
+
+    }
+
+    .row {
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .Rooms-col {
+        flex-basis: 31%;
+        width: 550px;
+        height: 550px;
+        background: rgba(211, 145, 189, 0.76);
+        border-radius: 10px;
+        margin-bottom: 5%;
+        /* padding: 20px 12px; */
+        padding-right: 2px;
+        box-sizing: border-box;
+        /* transition: 0.5s; */
+    }
+
+    .Rooms-col:hover {
+        box-shadow: 0 0 50px 0px rgb(33, 97, 180);
+        transition: 0.5s;
+    }
+
+    .img {
+        padding-top: 50px;
+        padding-bottom: 10px;
+        padding-right: 5px;
+        padding-left: 5px;
+
+    }
+
+    .name {
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        font-weight: 300;
+        font-family: 'Rye', cursive;
+        line-height: 22px;
+        padding: 10px;
+    }
+
+    .hero-btn {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 3px solid rgb(211, 22, 85);
+        padding: 12px 34px;
+        font-size: 18px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+        font-family: 'Zen Tokyo Zoo', cursive;
+
+    }
+
+    .hero-btn:hover {
+        border: 1px solid orange;
+        background: orange;
+        transition: 1s;
+    }
+
+    p {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 16px;
+    }
+
+</style>
+
+<body>
+    <header class="header">
+        <h2 class="name">Types Of Rooms We Offer</h2>
+        <div class="row">
+            <div class="Rooms-col">
+                <h2>Deluxe Rooms</h2>
+                <p>Most Economical Rooms with best-in-class ammenities and comfort,
+                  suited for single occupancy or short-stay double occupancy as they have limited space and storage
+                </p>
+                <img src="./nroom2.jpeg" alt="Deluxe-Room" class="img">
+                <a href="hotel-form.html" target="_blank" class="hero-btn"><strong>BOOK NOW</strong></a>
+
+            </div>
+            <div class="Rooms-col">
+                <h2>Supreme Rooms</h2>
+                <p>Our Supreme Rooms provide views over landscaped gardens. 
+                    It has ample storage, seating area, digital safe, minibar & luxurious duck down bedding.
+                </p>
+                <img src="./froom2.jpeg" alt="Supreme-Room" class="img">
+                <a href="hotel-form.html" target="_blank" class="hero-btn"><strong>BOOK NOW</strong></a>
+
+
+            </div>
+            
+            <div class="Rooms-col">
+                <h2>King's Suite</h2>
+                <p> Our King's Suite is elegantly furnished with handmade furniture include luxury en-suite facilities.
+                    It has seating area, ample storage, digital safe, minibar & luxurious bedding
+                </p>
+                <img src="./croom2.jpeg" alt="King's-Suite" class="img">
+                <a href="hotel-form.html" target="_blank" class="hero-btn"><strong>BOOK NOW</strong></a>
+
+            </div>
+
+        </div>
+    </header>
+
+</body>
+</html>
