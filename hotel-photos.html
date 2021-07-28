@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos : Midtown Majestic</title>
+    <link rel="icon" href="./LOGO.png" type="image/x-icon">
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        /* background-color: burlywood; */
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./roombg.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+        column-gap: 20px;
+    }
+
+    /* Create two equal columns that sits next to each other */
+    .column {
+        flex: 50%;
+        padding: 0 4px;
+    }
+
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .column img:hover {
+        box-shadow: 0 0 50px 0px rgb(33, 97, 180);
+        transition: 0.5s;
+    }
+
+    .size {
+        width: 320px;
+        height: 213px;
+    }
+
+    .name {
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        font-weight: 300;
+        font-family: 'Rye', cursive;
+        line-height: 22px;
+        padding: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .cover {
+        border-radius: 10px;
+        background-color: rgba(122, 84, 26, 0.76);
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 70px;
+        padding-right: 70px;
+        margin-right: 70px;
+        margin-left: 70px;
+        margin-bottom: 30px;
+    }
+</style>
+
+<body>
+    <header>
+        <div>
+            <h2 class="name">Midtown Majestic Photo Gallery</h2>
+        </div>
+    </header>
+    <div class="row cover">
+        <div class="column">
+            <img src="gal1 (1).jpg" class="size">
+            <img src="gal1 (2).jpg" class="size">
+            <img src="gal1 (3).jpg" class="size">
+            <img src="gal1 (4).jpg" class="size">
+            <img src="gal1 (5).jpg" class="size">
+            <img src="gal1 (6).jpg" class="size">
+            <img src="gal1 (7).jpg" class="size">
+            <img src="gal1 (8).jpg" class="size">
+            <img src="hotel-2563.jpg" class="size">
+        </div>
+       
+    </div>
+
+</body>
+
+</html>
