@@ -6,7 +6,10 @@ Code present in hotel.html file is for testing only, change it accordingly.If yo
 
 # Features
 1.User Friendly site.
+
 2.Online services.
+
 3.Online booking.
+
 4.Advanced technology.
 
