@@ -21,7 +21,10 @@
         background-size: cover;
         background-position: center;
         position: relative;
-
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 3px;
     }
 
     .left {
@@ -34,12 +37,71 @@
         text-align: center;
     }
 
-    .header {
-        width: 80%;
-        margin: auto;
+    h2 {
+        /* margin-top: 100px; */
+        padding-top: 100px;
+        color: white;
         text-align: center;
-        padding-top: 3px;
+        font-family: 'Rye', cursive;
+        font-size: 25px;
     }
+    .left {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        display: inline-block;
+    }
+
+    .left img {
+        width: 170px;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        display: inline-block;
+        
+    }
+
+    .navbar {
+        display: inline-block;
+        font-family: 'Otomanopee One', sans-serif;
+
+    }
+
+    .navbar li {
+        color: rgb(232, 67, 67);
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: rgb(10, 10, 10);
+        border: 25px;
+        text-decoration: none;
+        padding: 25px;
+
+    }
+
+    .nav-links ul li::after {
+        content: '';
+        width: 0px;
+        height: 2px;
+        background: red;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+
+    .nav-links ul li:hover::after {
+        width: 100%;
+    }
+
 
     h1 {
         color: blanchedalmond;
@@ -102,6 +164,7 @@
         font-family: 'Rye', cursive;
         line-height: 22px;
         padding: 10px;
+        padding-top: 60px;
     }
 
     .hero-btn {
@@ -134,7 +197,24 @@
 </style>
 
 <body>
-    <header class="header">
+    <header>
+        <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+            <img src="./LOGO.png" alt="Midtow-Majestic-Logo">     
+        </div>
+    </header>    
+        <!--right box for buttons-->
+        <div class="nav-links">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./hotel-photos.html">Photos</a></li>
+                <li><a style="color: red;">Services</a></li>
+                <li><a href="./hotel-rooms.html">Rooms</a></li>
+                <li><a href="./hotel-About_Us.html" >About Us</a></li>
+            </ul>
+
+        </div>
         <h2 class="name">Services We Offer</h2>
         <div class="row">
             <div class="Services-col">
@@ -165,7 +245,6 @@
             </div>
 
         </div>
-    </header>
 
 </body>
 </html>
