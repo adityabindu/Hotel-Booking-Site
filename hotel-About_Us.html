@@ -24,13 +24,71 @@
         position: relative;
     }
 
-    header {
-        padding-top: 10px;
+    h2 {
+        /* margin-top: 100px; */
+        padding-top: 100px;
         color: white;
         text-align: center;
         font-family: 'Rye', cursive;
         font-size: 25px;
     }
+    .left {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        display: inline-block;
+    }
+
+    .left img {
+        width: 170px;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        display: inline-block;
+        
+    }
+
+    .navbar {
+        display: inline-block;
+        font-family: 'Otomanopee One', sans-serif;
+
+    }
+
+    .navbar li {
+        color: rgb(232, 67, 67);
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: rgb(10, 10, 10);
+        border: 25px;
+        text-decoration: none;
+        padding: 25px;
+
+    }
+
+    .nav-links ul li::after {
+        content: '';
+        width: 0px;
+        height: 2px;
+        background: red;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+
+    .nav-links ul li:hover::after {
+        width: 100%;
+    }
+
 
     h4 {
         font-family: 'Otomanopee One', sans-serif;
@@ -85,8 +143,26 @@
 
 <body>
     <header>
+        <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+            <img src="./LOGO.png" alt="Midtow-Majestic-Logo">     
+        </div>
+    </header>    
+        <!--right box for buttons-->
+        <div class="nav-links">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./hotel-photos.html">Photos</a></li>
+                <li><a href="./hotel-services.html">Services</a></li>
+                <li><a href="./hotel-rooms.html">Rooms</a></li>
+                <li><a href="" style="color: red;">About Us</a></li>
+            </ul>
+
+        </div>
+    <div>
         <h2>About Us : Midtown Majestic</h2>
-    </header>
+    </div>
     <div class="row">
         <div class="content">
             <h4>Facts & Figures</h4>
@@ -121,29 +197,31 @@
     </div>
     
     <hr>
-    <div class="row">
-        <div class="column">
-            <h4 style="text-align: left;">Adress :</h4>
-            <p style="color: white;">
-                Hotel Midtown Majestic, <br>
-                Apollo Bandar, Colaba, <br>
-                Mumbai, Maharashtra 400001, <br> 
-                India
-            </p>
-            
-        </div>
-        <div class="column">
-            <h4 style="text-align: left;">Contact Us :</h4>
-            <p style="color: white;">
-                Phone No : +91-9170586423 <br>
-                E-Mail ID : midtown-majestic@gmail.com <br>
-
+    <footer>
+        <div class="row">
+            <div class="column">
+                <h4 style="text-align: left;">Adress :</h4>
+                <p style="color: white;">
+                    Hotel Midtown Majestic, <br>
+                    Apollo Bandar, Colaba, <br>
+                    Mumbai, Maharashtra 400001, <br> 
+                    India
+                </p>
                 
-            </p>
-            
-        </div>
+            </div>
+            <div class="column">
+                <h4 style="text-align: left;">Contact Us :</h4>
+                <p style="color: white;">
+                    Phone No : +91-9170586423 <br>
+                    E-Mail ID : midtown-majestic@gmail.com <br>
 
-    </div>
+                    
+                </p>
+                
+            </div>
+
+        </div>
+    </footer>
 </body>
 
 </html>
